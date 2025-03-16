@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청소년 MBTI 테스트</title>
+    <link rel="stylesheet" href="mbti.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="start-page">
+            <h1>나의 성격 유형은?</h1>
+            <h2>간단한 MBTI 테스트</h2>
+            <p>24개의 질문으로 알아보는 나만의 MBTI 유형!</p>
+            <button id="start-btn">시작하기</button>
+        </div>
+
+        <div id="question-page" style="display: none;">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <h2 id="question-number">질문 1/24</h2>
+            <h3 id="question-text">질문이 여기에 표시됩니다.</h3>
+            <div class="options">
+                <button class="option-btn" id="option1">매우 그렇다</button>
+                <button class="option-btn" id="option2">약간 그렇다</button>
+                <button class="option-btn" id="option3">약간 아니다</button>
+                <button class="option-btn" id="option4">전혀 아니다</button>
+            </div>
+        </div>
+
+        <div id="result-page" style="display: none;">
+            <h1>당신의 MBTI 결과는...</h1>
+            <div class="result-container">
+                <h2 id="mbti-result">ENFP</h2>
+                <div id="mbti-image-container">
+                    <img id="mbti-image" src="" alt="MBTI 이미지">
+                </div>
+                <h3 id="mbti-nickname">열정적인 활동가</h3>
+                <p id="mbti-description">당신의 MBTI 유형에 대한 설명이 여기에 표시됩니다.</p>
+            </div>
+            <button id="restart-btn">다시 테스트하기</button>
+            <button id="share-btn">결과 공유하기</button>
+        </div>
+    </div>
+    <script src="mbti.js"></script>
+</body>
+</html>

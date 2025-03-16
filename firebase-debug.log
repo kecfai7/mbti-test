@@ -1,0 +1,41 @@
+[debug] [2025-03-16T04:59:36.148Z] ----------------------------------------------------------------------
+[debug] [2025-03-16T04:59:36.151Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting --project=create
+[debug] [2025-03-16T04:59:36.151Z] CLI Version:   13.34.0
+[debug] [2025-03-16T04:59:36.152Z] Platform:      win32
+[debug] [2025-03-16T04:59:36.152Z] Node Version:  v22.14.0
+[debug] [2025-03-16T04:59:36.152Z] Time:          Sun Mar 16 2025 13:59:36 GMT+0900 (대한민국 표준시)
+[debug] [2025-03-16T04:59:36.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-16T04:59:36.160Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-16T04:59:36.160Z] > authorizing via signed-in user (drmath7@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Administrator\Desktop\MBTI
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-16T04:59:42.094Z] Using project from CLI flag: create
+[debug] [2025-03-16T04:59:42.095Z] Checked if tokens are valid: true, expires at: 1742104578586
+[debug] [2025-03-16T04:59:42.095Z] Checked if tokens are valid: true, expires at: 1742104578586
+[debug] [2025-03-16T04:59:42.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/create [none]
+[debug] [2025-03-16T04:59:42.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/create 403
+[debug] [2025-03-16T04:59:42.801Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/create {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-16T04:59:42.802Z] Request to https://firebase.googleapis.com/v1beta1/projects/create had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-16T04:59:42.981Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/create had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project create. Please make sure the project exists and your account has permission to access it.
